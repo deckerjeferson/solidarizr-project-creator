@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="eventFinder.js"></script>
+        <title>Tabela de Eventos</title>
+    </head>
+    <body>
+        <div class="container">
+            
+        </div>
+
+        <div id="modalForm" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form>
+                            <fieldset>
+                                <legend>Cadastro de Projetos</legend>
+                                <div class="form-group">
+                                    <label for="name">Nome do Projeto</label>
+                                    <input class="form-control" id="name" aria-describedby="name" placeholder="Nome do Projeto" type="name">                                 
+                                </div>
+                                <div class="form-group">
+                                    <label for="description">Descrição</label>
+                                    <textarea class="form-control" id="description" placeholder="Descreva aqui a descrição do projeto voluntário." rows="3"></textarea>               
+                                </div>
+                                <div class="form-group">
+                                    <select class="custom-select">
+                                    <option selected="">Categoria</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select class="custom-select">
+                                    <option selected="">Público Alvo</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="site">Site</label>
+                                    <input class="form-control" id="site" aria-describedby="name" placeholder="www.site.com.br" type="site">                                 
+                                </div>
+                                <div class="form-group">
+                                    <label for="mail">Email</label>
+                                    <input class="form-control" id="mail" aria-describedby="mail" placeholder="email@email.com" type="mail">                                 
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Telefone</label>
+                                    <input class="form-control" id="phone" aria-describedby="phone" placeholder="(51) 9999-9999)" type="phone">                                 
+                                </div>
+                                <button type="submit" class="btn btn-primary">Gravar!</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>    
+</html>
