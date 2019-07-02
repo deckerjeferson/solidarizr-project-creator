@@ -7,8 +7,20 @@
         <script src="./js/app.js"></script>
         <title>Tabela de Eventos</title>
     </head>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">CRUD de Projetos do Solidarizr</a>
+
+            <div class="collapse navbar-collapse" id="navbarColor03">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="javascript:projectController.abrirModal()">Novo Projeto <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <body>
-        <a href="javascript:projectController.abrirModal()">Novo Projeto</a>
         <div class="container">
             
         </div>
@@ -55,7 +67,7 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
                         <button id="btnSave" type="button" class="btn btn-primary">Salvar</button>
                     </div>
                 </div>
