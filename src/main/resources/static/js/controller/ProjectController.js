@@ -23,7 +23,7 @@ class ProjectController{
     loadProjects(){
         var self = this;
 
-        jQuery.get( "http://solidarizr-manager.herokuapp.com/events", function( data ) {
+        jQuery.get( "https://solidarizr-manager.herokuapp.com/events", function( data ) {
             console.log(data);
             self.createProjectTables(data);
         });
@@ -55,7 +55,7 @@ class ProjectController{
         this.fillTargetAudiences();
     
         if(id != null){
-            await jQuery.get( "http://solidarizr-manager.herokuapp.com/event/"+id, function( data ) {
+            await jQuery.get( "https://solidarizr-manager.herokuapp.com/event/"+id, function( data ) {
                 self.fillForm(data);
             });
         }
@@ -77,14 +77,14 @@ class ProjectController{
 
     fillTargetAudiences(){
         var self = this;
-        jQuery.get( "http://solidarizr-manager.herokuapp.com/targetAudiences/", function( data ) {
+        jQuery.get( "https://solidarizr-manager.herokuapp.com/targetAudiences/", function( data ) {
             self.createTArgetAudienceOptions(data);
         });
     }
 
     fillCategories(){
         var self = this;
-        jQuery.get( "http://solidarizr-manager.herokuapp.com/categories/", function( data ) {
+        jQuery.get( "https://solidarizr-manager.herokuapp.com/categories/", function( data ) {
             self.createCategoryOptions(data);
         });
     }
@@ -134,7 +134,7 @@ class ProjectController{
 
         jQuery.ajax({
             type: 'POST',
-            url : "http://solidarizr-manager.herokuapp.com/event",
+            url : "https://solidarizr-manager.herokuapp.com/event",
             data: JSON.stringify(project),
             contentType: 'application/json',
             success: () => {alert("Salvo!"); $('#modalForm').modal('hide'); projectController.loadProjects();},
@@ -149,7 +149,7 @@ class ProjectController{
 
         jQuery.ajax({
             type: 'DELETE',
-            url : "http://solidarizr-manager.herokuapp.com/event/"+id,
+            url : "https://solidarizr-manager.herokuapp.com/event/"+id,
             success: () => {alert("Deletado!"); projectController.loadProjects();},
             error: (a,b) => {alert("Errou! "); console.log(a); console.log(b);} 
         })
